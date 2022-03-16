@@ -1,10 +1,9 @@
-const express = require('express')
-const path = require('path')
-const PORT = process.env.PORT || 5000
+const express = require("express");
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+const PORT = process.env.PORT || 5000;
+
+const apiApp = express();
+
+require("api/v1/prices.js")(apiApp);
+
+apiApp.listen(PORT, () => console.log(`Listening on ${PORT}`));

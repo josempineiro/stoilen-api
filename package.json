@@ -1,0 +1,26 @@
+{
+  "name": "stoilen-api",
+  "version": "1.0.0",
+  "description": "Stoilen API - API de precios de combustibles que https://datos.gob.es no quiere tener (o que tengas)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josempineiro/stoilen-api.git"
+  },
+  "keywords": [
+    "API",
+    "precio",
+    "combustibles",
+    "españa"
+  ],
+  "author": "José Manuel Piñeiro García",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josempineiro/stoilen-api/issues"
+  },
+  "homepage": "https://github.com/josempineiro/stoilen-api#readme"
+}
